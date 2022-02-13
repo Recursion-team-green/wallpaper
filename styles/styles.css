@@ -1,0 +1,63 @@
+.backgroundImg{
+    height: 100vh;
+    width: auto;
+}
+
+.box{
+    position: relative;
+}
+
+.image{
+    opacity: 0;
+    position: absolute;
+    animation: change-img-animation 30s infinite;
+}
+
+.message{
+    text-shadow: 0 0 0.5rem white;
+    opacity: 0;
+    position: absolute;
+    animation: change-message-animation 30s infinite;
+}
+
+@keyframes change-img-animation{
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    36%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+
+@keyframes change-message-animation{
+    0%{
+        opacity: 0;
+        transform: scale(1);
+    }
+    15%{
+        opacity: 0.5;
+        transform: scale(2);
+    }
+    25%{
+        opacity: 1;
+        transform: scale(3);
+    }
+    30%{
+        opacity: 1;
+        transform: scale(3);
+    }
+    45%{
+        opacity: 0.25;
+        transform: scale(2);
+    }
+    70%{
+        opacity: 0;
+        transform: scale(1);
+    }
+}
